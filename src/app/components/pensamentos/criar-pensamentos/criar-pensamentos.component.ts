@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Pensamento} from "../pensamento";
+import {Pensamento} from "../pensamento.interface";
 import {PensamentoService} from "../pensamento.service";
 import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
