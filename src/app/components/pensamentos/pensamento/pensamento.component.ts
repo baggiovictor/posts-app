@@ -7,7 +7,7 @@ import { PensamentoService } from '../pensamento.service';
   templateUrl: './pensamento.component.html',
   styleUrls: ['./pensamento.component.css']
 })
-export class PensamentoComponent implements OnInit {
+export class PensamentoComponent {
   @Input() pensamento: Pensamento = {
     id: 0,
     conteudo: 'I love Angular',
@@ -17,9 +17,6 @@ export class PensamentoComponent implements OnInit {
   }
 
   constructor(private service: PensamentoService) { }
-
-  ngOnInit(): void {
-  }
 
   larguraPensamento(): string {
     return this.pensamento.conteudo.length >= 256 ? 'pensamento-g' : 'pensamento-p';
