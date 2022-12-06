@@ -21,7 +21,11 @@ const routes: Routes = [
   {
     path: 'pensamentos/editar-pensamento/:id',
     component: EditarPensamentoComponent
-  }
+  },
+  {
+    path: '**',
+    component: ListarPensamentoComponent
+  },
 ];
 
 @NgModule({
