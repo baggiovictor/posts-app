@@ -1,64 +1,18 @@
 {
   "pensamentos": [
     {
-      "id": 4,
+      "id": 1,
       "conteudo": "wqr",
       "autoria": "Andree",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "conteudo": "Novo teste",
       "autoria": "Victor",
       "modelo": "modelo1",
-      "id": 5
-    },
-    {
-      "conteudo": "React",
-      "autoria": "Victor",
-      "modelo": "modelo1",
-      "id": 6
-    },
-    {
-      "id": 7,
-      "conteudo": "abacate",
-      "autoria": "abacate",
-      "modelo": "modelo1"
-    },
-    {
-      "conteudo": "Novo teste",
-      "autoria": "Teste",
-      "modelo": "modelo1",
-      "id": 8
-    },
-    {
-      "conteudo": "Novo teste",
-      "autoria": "Teste",
-      "modelo": "modelo1",
-      "id": 8
-    },
-    {
-      "conteudo": "Novo teste",
-      "autoria": "Teste",
-      "modelo": "modelo1",
-      "id": 8
-    },
-    {
-      "conteudo": "Novo teste",
-      "autoria": "Teste",
-      "modelo": "modelo1",
-      "id": 8
-    },
-    {
-      "conteudo": "Novo teste",
-      "autoria": "Teste",
-      "modelo": "modelo1",
-      "id": 8
-    },
-    {
-      "conteudo": "Novo teste",
-      "autoria": "Teste",
-      "modelo": "modelo1",
-      "id": 8
+      "id": 2,
+      "favorito": true
     }
   ]
 }

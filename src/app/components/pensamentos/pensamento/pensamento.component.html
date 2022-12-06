@@ -1,13 +1,33 @@
-<div class="pensamento {{ pensamento.modelo }} ff-roboto-mono" [ngClass]="larguraPensamento()">
-  <img src="/assets/imagens/{{pensamento.modelo}}.png" alt="Aspas coloridas">
-  <p class="conteudo"><b>{{ pensamento.conteudo }}</b></p>
+<div
+  class="pensamento {{ pensamento.modelo }} ff-roboto-mono"
+  [ngClass]="larguraPensamento()"
+>
+  <img
+    src="/assets/imagens/{{ pensamento.modelo }}.png"
+    alt="Aspas coloridas"
+  />
+  <p class="conteudo">
+    <strong>{{ pensamento.conteudo }}</strong>
+  </p>
   <p class="autoria">{{ pensamento.autoria }}</p>
   <div class="acoes">
-    <button class="botao-editar" routerLink="/pensamentos/editar-pensamento/{{pensamento.id}}">
-      <img src="/assets/imagens/icone-editar.png" alt="Icone de editar">
+    <button class="botao-favorito" (click)="atualizarFavoritos()">
+      <img
+        src="/assets/imagens/icone-favorito-{{ mudarIconeFavorito() }}.png"
+        alt="Ícone favorito {{ mudarIconeFavorito() }}"
+      />
     </button>
-    <button class="botao-excluir" routerLink="/pensamentos/excluir-pensamento/{{pensamento.id}}">
-      <img src="/assets/imagens/icone-excluir.png" alt="Icone de editar">
+    <button
+      class="botao-editar"
+      routerLink="/pensamentos/editar-pensamento/{{ pensamento.id }}"
+    >
+      <img src="/assets/imagens/icone-editar.png" alt="Icone de editar" />
+    </button>
+    <button
+      class="botao-excluir"
+      routerLink="/pensamentos/excluir-pensamento/{{ pensamento.id }}"
+    >
+      <img src="/assets/imagens/icone-excluir.png" alt="Icone de editar" />
     </button>
   </div>
 </div>
