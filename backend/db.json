@@ -12,7 +12,7 @@
       "autoria": "Victor",
       "modelo": "modelo1",
       "id": 2,
-      "favorito": true
+      "favorito": false
     }
   ]
 }
